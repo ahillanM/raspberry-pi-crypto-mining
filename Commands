@@ -1,0 +1,9 @@
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+mkdir build
+cd build
+cmake ..
+make
+./xmrig -o gulf.moneroocean.stream:10001 -u (your Monero wallet username) -p (Name of your miner)
